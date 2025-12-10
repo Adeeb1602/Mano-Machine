@@ -21,16 +21,15 @@ This project was developed as a final submission for the Digital Electronics cou
 * **"Step Mode" Debugger:** Freezes the FSM clock and allows single-cycle advancement via a physical button.  
 * **Visual State Feedback:** Displays the current state (0-F) on an external 7-segment display.  
 * **Visual Output Feedback:** Displays the FSM outputs on onboard LEDs.  
-* **Debounced Inputs:** Includes a 5-channel synchronizer to prevent switch bounce noise.  
 * **Automated Workflow:** Python script (generate\_fsm\_robust.py) eliminates manual Verilog coding errors.
 
 ## **📂 Repository Structure**
-
+```
 Mano-Machine/  
 ├── Docs/                   \# Documentation & Report  
-│   └── Project\_Report.pdf  \# The complete technical report  
+│   └── Mano_Machine.pdf  \# The complete technical report  
 ├── Hardware/               \# Verilog Source Code  
-│   ├── top\_level.v         \# System Integrator & Debouncer  
+│   ├── top\_level.v         \# System Integrator  
 │   ├── fsm\_core.v          \# The FSM Logic (Auto-Generated)  
 │   ├── debugger.v          \# The Clock Gating & Step Logic  
 │   └── decoder\_7seg.v      \# 7-Segment Display Driver  
@@ -40,16 +39,18 @@ Mano-Machine/
 │   └── fsm\_logic.xlsx      \# The Excel State Table  
 └── Simulation/             \# Testbenches  
     └── tb\_top\_level.v      \# Verilog Testbench
-
+```
 ## **🔧 How to Use**
 
 ### **Phase 1: Define Your Logic (Software)**
 
 1. Open Tools/fsm\_logic.xlsx and define your state table (Present State, Input, Next State, Output).  
-2. Run the generator script:  
+2. Run the generator script:
+   ```
    python Tools/generate\_fsm\_robust.py Tools/fsm\_logic.xlsx
+   ```
 
-3. This will generate a new fsm\_core.v file with your logic.
+4. This will generate a new fsm\_core.v file with your logic.
 
 ### **Phase 2: Implementation (Hardware)**
 
@@ -66,7 +67,7 @@ Mano-Machine/
 
 ## **👥 Author**
 
-* **\[Adeeb Ali Islam\]** \-
+* **\[Adeeb Ali Islam\]** \
 
 
 ## **🙏 Acknowledgements**
