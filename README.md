@@ -11,7 +11,7 @@ Standard FSM design often involves a disconnect between high-level logic (state 
    * **Run Mode (1Hz):** Real-time execution.  
    * **Step Mode:** A manual, single-step debugger using a custom edge-detector circuit.
 
-This project was developed as a final submission for the Digital Electronics course.
+This project was developed as a final submission for the Digital Electronics course(ELL1401) in my First Year at IIT Delhi. 
 
 **📄 Project Report:** The full technical details, including block diagrams, pin maps, and testbench waveforms, can be found in the [**Docs/**](https://github.com/Adeeb1602/Mano-Machine/tree/main/Docs) directory.
 
