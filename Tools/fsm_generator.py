@@ -4,7 +4,7 @@ import sys
 
 
 VERILOG_TEMPLATE = 'fsm_core_template.v'
-OUTPUT_FILE = 'fsm_core.v'               
+OUTPUT_FILE = 'C:\\Users\\HP\\OneDrive\\Documents\\Mano-Machine\\Hardware\\fsm_core.v'               
 
 def generate_verilog_from_excel(excel_file_path):
     print(f"Reading FSM table from: {excel_file_path}...")
@@ -72,7 +72,7 @@ def generate_verilog_from_excel(excel_file_path):
     with open(OUTPUT_FILE, 'w') as f:
         f.writelines(final_lines)
 
-    print(f"Success! Overwrote {OUTPUT_FILE} with logic from {excel_file_path}.")
+    print(f"Success! Overwrote fsm_core.v with logic from {excel_file_path}.")
 
 
 if __name__ == "__main__":
