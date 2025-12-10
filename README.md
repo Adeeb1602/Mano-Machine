@@ -47,6 +47,7 @@ Mano-Machine/
 1. Open Tools/fsm_full_template.xlsx, use it as a template to make another file fsm_logic.xlsx(example) and define your state table (Only Next State, Output required) in it.
 
 Note: unused states and inputs will be handled, just keep them empty.
+
 2. Run the generator script: (run python in directory Tools)
    ```
    python fsm_generator.py fsm_logic.xlsx
